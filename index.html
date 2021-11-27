@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-heading">Simple, traffic-based pricing</h1>
+      <p class="header-text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
+
+    <main class="main">
+      <div class="main-top">
+        <p class="box-top__text-lft">100k Pageviews</p>
+        <p class="box-top__text-rgt">
+          <span class="box-top__text-price">$16</span>
+          <span class="box-top__text-duration">/month</span>
+        </p>
+
+        <div class="box-mid">
+          <div class="box-mid__progress"></div>
+          <input
+            id="slider"
+            class="box-mid__slider slow"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+          />
+        </div>
+
+        <div class="box-bot">
+          <p class="box-bot__text">Monthly Billing</p>
+          <div class="box-bot__toggle box-bot__text">
+            <button class="box-bot__toggle-btn"></button>
+          </div>
+          <p class="box-bot__text">Yearly Billing</p>
+          <p class="box-bot__text box-bot__text-yellow">
+            -25% <span class="box-bot__text-discount">discount</span>
+          </p>
+        </div>
+      </div>
+      <div class="main-bot">
+        <ul class="main-bot__list">
+          <li class="list-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="list-text">Unlimited websites</p>
+          </li>
+
+          <li class="list-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="list-text">100% data ownership</p>
+          </li>
+
+          <li class="list-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="list-text">Email reports</p>
+          </li>
+        </ul>
+
+        <button class="main-bot__btn">Start my trial</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">venkatesh.b</a>.
+    </foot>
+  </body>
+</html>
